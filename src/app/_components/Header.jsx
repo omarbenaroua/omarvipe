@@ -58,60 +58,44 @@ function Header() {
                 <ul className="flex items-center gap-6 text-sm">
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
+                      className="text-gray-500 transition hover:text-primary"
                       href="/"
                     >
-                      {""}
-                      Home{" "}
+                      Home
                     </a>
                   </li>
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
+                      className="text-gray-500 transition hover:text-primary"
+                      href="/pages/about"
+                    >
+                      About
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      className="text-gray-500 transition hover:text-primary"
                       href="/product-details"
                     >
-                      {""}
-                      Prodotti{" "}
+                      Products
                     </a>
                   </li>
 
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
+                      className="text-gray-500 transition hover:text-primary"
                       href="/"
                     >
-                      {" "}
-                      Careers{" "}
+                      Services
                     </a>
                   </li>
-
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
+                      className="text-gray-500 transition hover:text-primary"
+                      href="/pages/Position"
                     >
-                      {" "}
-                      History{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
-                    >
-                      {" "}
-                      Services{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
-                    >
-                      {" "}
-                      Team{" "}
+                      Dove ci troviamo
                     </a>
                   </li>
                 </ul>
