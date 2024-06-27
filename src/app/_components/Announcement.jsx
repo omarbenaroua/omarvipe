@@ -5,10 +5,10 @@ import { X } from "lucide-react";
 function Announcement() {
   const [Announcement, setAnnouncement] = useState(true);
   const CloseAnnouncement = () => Announcement && setAnnouncement(false);
-  const [currentURL, setcurrentURL] = useState(window.location.href);
+  /* const [currentURL, setcurrentURL] = useState(window.location.href); */
   return (
     <>
-      {Announcement && currentURL === "https://omarvipe.vercel.app/" ? (
+      {Announcement /*&&  currentURL === "https://omarvipe.vercel.app/" */ ? (
         <div className="flex items-center justify-between gap-4 bg-primary px-4 py-1 text-white">
           <p className="text-sm font-medium">
             Ti sei appena iscritto? Hai subito diritto a uno sconto del 20%{" "}
