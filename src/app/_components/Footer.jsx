@@ -25,7 +25,7 @@ function Footer() {
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-primary" href="/pages/About"> About </a>
+        <a className="text-gray-700 transition hover:text-primary" href="/pages/about"> About </a>
       </li>
 
       <li>
@@ -33,11 +33,11 @@ function Footer() {
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-primary" href="services"> Services </a>
+        <a className="text-gray-700 transition hover:text-primary" href="/pages/services"> Services </a>
       </li>
 
       <li>
-        <a className="text-gray-700 transition hover:text-primary" href="/position"> Dove ci troviamo </a>
+        <a className="text-gray-700 transition hover:text-primary" href="/pages/position"> Dove ci troviamo </a>
       </li>
     </ul>
 

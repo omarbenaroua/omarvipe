@@ -1,10 +1,12 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ProductList from './ProductList'
 import ProductApis from '../_utils/productApis';
+import Loading from "./Loading"
 
 function ProductSection() {
   const [productList , setProductList] = useState([])
+  console.log(productList)
   useEffect (() =>{
     getLatestProducts_();
   },[])
@@ -14,15 +16,13 @@ function ProductSection() {
       console.log(res.data.data)
     })
   }
-
   return (
     <>
     <div className='px-10 md:px-20 mb-20'>
-    <h2 className='text-center md:text-2xl p-3 my-10 text-primary'>LE NOSTRE AUTO DISPONIBILI</h2>
-      <ProductList productList={ productList }/>
+    <h2 className='text-center md:text-2xl p-3 my-10 text-primary'>I NOSTRI PRODOTTI</h2>
+    {!productList[0] ? <Loading/> : <ProductList productList={ productList }/>}
     </div>
     </>
-    
   )
 }
 

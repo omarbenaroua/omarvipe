@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 function ProductItem({ product }) {
-  console.log(product)
+
   return (
     <>
       <Link href={`/product-details/${product?.id}`}>

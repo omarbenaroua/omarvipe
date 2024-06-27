@@ -8,7 +8,6 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHER_KEY);
 
 function checkout() {
     const options = {
-        /* clientSecret: '{{CLIENT_SECRET}}', */
         mode: 'payment',
         currency: 'eur',
         amount : 100

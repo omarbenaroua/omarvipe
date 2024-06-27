@@ -8,6 +8,7 @@ import ProductCart from "./ProductCart";
 import { X } from "lucide-react";
 import { CartContext } from "../_context/CartContext";
 import CartApis from "../_utils/CartApis";
+import Announcement from "./Announcement"
 
 
 function Header() {
@@ -47,6 +48,7 @@ function Header() {
 
   return (
     !isLogged && (
+      <>
       <header className="bg-secondary w-[100%] shadow-xl">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
           <div className="flex h-16 items-center justify-between">
@@ -85,7 +87,7 @@ function Header() {
                   <li>
                     <a
                       className="text-gray-500 transition hover:text-primary"
-                      href="/"
+                      href="/pages/services"
                     >
                       Services
                     </a>
@@ -93,7 +95,7 @@ function Header() {
                   <li>
                     <a
                       className="text-gray-500 transition hover:text-primary"
-                      href="/pages/Position"
+                      href="/pages/position"
                     >
                       Dove ci troviamo
                     </a>
@@ -139,6 +141,8 @@ function Header() {
           </div>
         </div>
       </header>
+      <Announcement/>
+      </>
     )
   );
 }

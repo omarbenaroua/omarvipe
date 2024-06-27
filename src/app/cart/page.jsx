@@ -10,7 +10,6 @@ import Button from '../_components/Button';
 function Cart() {
 
   const {cart , setCart} = useContext(CartContext)
-  console.log(cart)
   const getTotal = () => {
     let totalaAmount = 0;
     cart.forEach(item => {

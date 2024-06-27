@@ -7,5 +7,5 @@ const getProductCategory = (category) => axiosClient.get(`/products?filters[cate
 export default {
     getLasttestProducts,
     getProductById,
-    getProductCategory
+    getProductCategory,
 }

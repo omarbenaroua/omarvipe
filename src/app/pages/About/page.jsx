@@ -2,11 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import Cover from '../../../../public/coverSignin.jpg'
 import Button from '../../_components/Button'
+import Reviews from "../../_components/Reviews"
 
-function about() {
+function About() {
   return (
-    <section>
-  <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+    <>
+    
+    <section className='pb-40'>
+  <div className="mx-auto max-w-screen-2xl px-4 py-6 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
       <div className="relative z-10 lg:py-16">
         <div className="relative h-100 sm:h-80 lg:h-full">
@@ -20,11 +23,11 @@ function about() {
         ></span>
 
         <div className="p-8 sm:p-16 lg:p-24">
-          <h2 className="text-2xl font-bold sm:text-3xl">
+          <h2 className="text-xl font-bold sm:text-2xl">
           Benvenuti da OmarVipe, il vostro negozio di fiducia per sigarette elettroniche e accessori.
           </h2>
 
-          <p className="mt-4 text-gray-600">
+          <p className="text-sm mt-4 text-gray-600">
           Situato nel cuore della città, siamo orgogliosi di offrire una vasta gamma di prodotti di alta 
           qualità per soddisfare ogni esigenza di svapo, sia per i principianti che per i vapers esperti.
           La nostra missione è semplice: fornire ai nostri clienti le migliori sigarette elettroniche e 
@@ -38,8 +41,7 @@ function about() {
            batterie, coil, atomizzatori e tutto ciò di cui avete bisogno per personalizzare e mantenere il
            vostro dispositivo. Inoltre, proponiamo dispositivi pod, compatti, facili da usare e ideali per 
            chi è sempre in movimento.Qualità Garantita: Collaboriamo solo con i migliori produttori per 
-           offrirvi prodotti sicuri e certificati. Assistenza Clienti Eccellente: Il nostro team è sempre 
-           disponibile per offrirvi consigli personalizzati e assistenza post-vendita.
+           offrirvi prodotti sicuri e certificati.
 
           </p>
           <div className='py-3'>
@@ -50,7 +52,9 @@ function about() {
     </div>
   </div>
 </section>
+<Reviews/>
+</>
   )
 }
 
-export default about
+export default About
