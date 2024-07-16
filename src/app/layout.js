@@ -9,11 +9,6 @@ import { useState } from "react";
 
 const inter = Roboto({ subsets: ["latin"], weight: "500" });
 
-/* export const metadata = {
-  title: "OmarCars",
-  description: "Omar Cars",
-}; */
-
 export default function RootLayout({ children }) {
 const [cart , setCart ] = useState([])
 
@@ -21,6 +16,10 @@ const [cart , setCart ] = useState([])
     <ClerkProvider>
       <CartContext.Provider value={{cart , setCart}}>
           <html lang="en">
+          <head>
+            <title>OmarVipe</title>
+            <link rel="icon" type="image/png" href="./logo.png"/>
+          </head>
             <body className={inter.className}>
               <Header />
               {children}
