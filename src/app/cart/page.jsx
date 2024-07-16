@@ -4,7 +4,6 @@ import { useContext } from 'react';
 import { CartContext } from '../_context/CartContext';
 import CartApis from '../_utils/CartApis';
 import {Trash} from 'lucide-react'
-import EmptyCart from './_components/EmptyCart'
 import Button from '../_components/Button';
 
 function Cart() {
@@ -25,15 +24,13 @@ function Cart() {
       console.log('error' , error)
     })
   }
-
-  return !cart[0] ? <EmptyCart/> : (
+  return (
 <section>
   <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
     <div className="mx-auto max-w-3xl">
       <header className="text-center">
         <h1 className="text-xl font-bold text-gray-900 sm:text-3xl">Il tuo carello</h1>
       </header>
-
       <div className="mt-8">
       {cart.map((item) => {
       return ( 
@@ -106,7 +103,8 @@ function Cart() {
               </span>
             </div>
 
-            <div className="flex justify-end">
+            <div className="flex justify-between">
+              <Button href={"/product-details"} title={"Aggiungi nel carrello"}/>
               <Button href={"/checkout"} title={"Checkout"}/>
             </div>
           </div>

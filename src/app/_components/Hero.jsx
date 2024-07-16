@@ -17,7 +17,7 @@ function Hero() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Botton href={"/product-details"} title={"Prodotti"}/>
-            <Botton href={"/"} title={"Dove ci troviamo"}/>
+            <Botton href={"/pages/position"} title={"Dove ci troviamo"}/>
             </div>
           </div>
         </div>

@@ -44,7 +44,7 @@ function Footer() {
     <ul className="mt-12 flex justify-center gap-6 md:gap-8">
       <li>
         <a
-          href="https://github.com/omarbenaroua"
+          href="https://omar-dev-beryl.vercel.app/"
           className="text-gray-700 transition hover:text-primary"
         >
           <span className="sr-only">Facebook</span>
@@ -54,7 +54,7 @@ function Footer() {
 
       <li>
         <a
-          href="https://github.com/omarbenaroua"
+          href="https://omar-dev-beryl.vercel.app/"
           className="text-gray-700 transition hover:text-primary"
         >
           <span className="sr-only">Instagram</span>
@@ -64,7 +64,7 @@ function Footer() {
 
       <li>
         <a
-          href="https://github.com/omarbenaroua"
+          href="https://omar-dev-beryl.vercel.app/"
           className="text-gray-700 transition hover:text-primary"
         >
           <span className="sr-only">Twitter</span>
@@ -74,7 +74,7 @@ function Footer() {
 
       <li>
         <a
-          href="https://github.com/omarbenaroua"
+          href="https://omar-dev-beryl.vercel.app/"
           className="text-gray-700 transition hover:text-primary"
         >
           <span className="sr-only">GitHub</span>
