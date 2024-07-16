@@ -5,7 +5,6 @@ import { X , ShieldAlert} from "lucide-react";
 function Announcement() {
   const [Announcement, setAnnouncement] = useState(true);
   const CloseAnnouncement = () => Announcement && setVisible(false);
-  const [currentURL, setcurrentURL] = useState(window.location.href);
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
@@ -15,7 +14,7 @@ function Announcement() {
 
   return (
     <>
-      {visible &&  currentURL === "http://localhost:3000/" || currentURL === "https://omarvipe.vercel.app/product-details/" ? (
+      {visible && (
         <div className="flex items-center justify-between gap-4 bg-primary px-4 py-1 text-white duration-75 animate-pulse">
           <a href="/product-details" className="inline-block underline p-1">
           <p className="text-sm font-medium flex items-center justify-between">
@@ -29,7 +28,7 @@ function Announcement() {
             <X size={15} strokeWidth={3} />
           </button>
         </div>
-      ): " "}
+      )}
     </>
   );
 }
