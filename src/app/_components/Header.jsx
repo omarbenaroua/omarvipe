@@ -76,7 +76,7 @@ function Header() {
                     <li>
                       <a
                         className="text-gray-500 transition hover:text-primary"
-                        href="/pages/about"
+                        href="/about"
                       >
                         About
                       </a>
@@ -94,7 +94,7 @@ function Header() {
                     <li>
                       <a
                         className="text-gray-500 transition hover:text-primary"
-                        href="/pages/services"
+                        href="/services"
                       >
                         Services
                       </a>
@@ -102,7 +102,7 @@ function Header() {
                     <li>
                       <a
                         className="text-gray-500 transition hover:text-primary"
-                        href="/pages/position"
+                        href="/position"
                       >
                         Dove ci troviamo
                       </a>
